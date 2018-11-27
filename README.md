@@ -1,6 +1,8 @@
-# IQOD_Misc_16_a
+# IQOD_Misc_16
 
 ## DO EVERYTHING MANUALLY
+
+### Exercise 1
 
 Given an input of a multi-dimensional array, create a program that will print a list of car parts that will fit on a shelf 10 units long.
 
@@ -40,3 +42,7 @@ Output
 Shelf 1: radio
 Shelf 2: windshield wiper, tire pressure gauge
 ```
+
+### Exercise 2
+
+Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2b1c5a3. If the length of the original string, your method should return the original string. You can assume the string has only uppercase and lowercase letters (a-z).
