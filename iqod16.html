@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var carParts = [
+        ["Door",10],
+        ["Window",6],
+        ["Electrical supply system",4],
+        ["Ignition electronic system",4],
+        ["Car seat",5],
+        ["Braking system",2],
+        ["Exhaust system",1],
+        ["Suspension and steering systems",3],
+        ["Transmission system",2],
+        ["Air conditioning system (A/C)",3],
+        ["Bearings",3],
+        ["Hose",7]
+    ];
+
+    var shelf = 1;
+    var counter = 0;
+    var finalStatment = "Shelf "+shelf+" ";
+
+    function iqod13(carParts)
+    {
+        for (var x = 0; x<carParts.length;x++)
+        {
+
+            for (var i = 1; i<carParts[x].length;i++)
+            {
+                counter += carParts[x][1];
+                if (counter<10){
+                    finalStatment+= (carParts[x][0]+", ");
+                    console.log("If statement: "+counter);
+                }
+                else {
+                    console.log("Else statement: "+counter);
+                    finalStatment+= ("<br/>"+"Shelf "+shelf+" "+carParts[x][0]);
+                    counter = 0;
+                    shelf += 1;
+                }
+            }
+            if ((x+1) === carParts.length){
+                return finalStatment
+            }
+        }
+    }
+
+
+    document.write(iqod13(carParts))
+</script>
+
+</body>
+</html>
